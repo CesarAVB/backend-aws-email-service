@@ -196,3 +196,9 @@ Body (raw JSON):
 ---
 
 ⭐ Se este projeto foi útil para você, considere dar uma estrela no repositório!
+
+
+
+![Screenshot](public/email01.png)
+
+![Screenshot](public/email02.png)
