@@ -199,6 +199,6 @@ Body (raw JSON):
 
 
 
-![Screenshot](public/email01.png)
+![Screenshot](src/main/resources/public/email01.png)
 
-![Screenshot](public/email02.png)
+![Screenshot](src/main/resources/public/email02.png)
