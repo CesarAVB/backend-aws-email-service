@@ -45,18 +45,10 @@ src/main/java/br/com/sistema/emailservice/
 
 ## 🚀 Tecnologias Utilizadas
 
-- **Java 17+**
-- **Spring Boot 3.x**
+- **Java 21**
+- **Spring Boot 3.5.8**
 - **AWS SDK for Java** (Amazon SES)
 - **Maven**
-
-## 📦 Pré-requisitos
-
-1. **Java 17** ou superior instalado
-2. **Maven** instalado
-3. **Conta AWS** ativa
-4. **AWS SES** configurado na sua região
-5. **Email verificado** no AWS SES (necessário para ambientes sandbox)
 
 ## ⚙️ Configuração
 
@@ -70,8 +62,6 @@ aws.secretKey=SUA_SECRET_KEY_AQUI
 aws.region=sa-east-1
 ```
 
-> ⚠️ **Importante**: Nunca commite suas credenciais AWS! Considere usar variáveis de ambiente ou AWS Secrets Manager em produção.
-
 ### 2. Email Remetente
 
 No arquivo `SesEmailSender.java`, configure o email remetente verificado no SES:
@@ -79,14 +69,6 @@ No arquivo `SesEmailSender.java`, configure o email remetente verificado no SES:
 ```java
 .withSource("seu-email-verificado@exemplo.com")
 ```
-
-### 3. AWS SES Sandbox
-
-Se sua conta AWS SES está em modo **sandbox**, você só pode enviar emails para:
-- Endereços de email verificados
-- Domínios verificados
-
-Para sair do sandbox, solicite aumento de limite no console AWS.
 
 ## 🔧 Instalação e Execução
 
@@ -202,24 +184,14 @@ Body (raw JSON):
 
 ## 🧪 Melhorias Futuras
 
+- [ ] Adicionar documentação com Swagger
 - [ ] Adicionar validação de emails com Bean Validation
-- [ ] Implementar testes unitários e de integração
 - [ ] Suportar envio de emails HTML
 - [ ] Adicionar suporte para anexos
 - [ ] Implementar fila de emails com Amazon SQS
 - [ ] Adicionar logs estruturados
-- [ ] Implementar rate limiting
 - [ ] Adicionar autenticação e autorização na API
 - [ ] Criar templates de email
-- [ ] Implementar retry logic para falhas temporárias
-
-## 📄 Licença
-
-Este é um projeto de estudos e está disponível para uso livre.
-
-## 👨‍💻 Autor
-
-Desenvolvido como projeto de estudos para prática com AWS SES e Clean Architecture.
 
 ---
 
