@@ -112,6 +112,8 @@ A aplicação estará disponível em: `http://localhost:8080`
 ```
 Email enviado com sucesso!
 ```
+![Screenshot](src/main/resources/public/email02.png)
+
 
 **Response Erro (500 Internal Server Error):**
 ```
@@ -144,6 +146,8 @@ Body (raw JSON):
   "body": "Conteúdo do email"
 }
 ```
+![Screenshot](src/main/resources/public/email01.png)
+
 
 ## 📚 Estrutura de Classes
 
@@ -196,9 +200,3 @@ Body (raw JSON):
 ---
 
 ⭐ Se este projeto foi útil para você, considere dar uma estrela no repositório!
-
-
-
-![Screenshot](src/main/resources/public/email01.png)
-
-![Screenshot](src/main/resources/public/email02.png)
